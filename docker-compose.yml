@@ -1,0 +1,10 @@
+php:
+  # restart: always
+  # image: petronetto/php-nginx-alpine
+  image: qianuuu.cn/php-nginx
+  environment:
+    - TZ=Asia/Shanghai
+  volumes:
+    - $PWD/web:/app/public
+  ports:
+    - "7080:80"
